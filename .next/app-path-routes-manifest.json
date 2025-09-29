@@ -1,0 +1,12 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/api/send-email/route": "/api/send-email",
+  "/blog/page": "/blog",
+  "/page": "/",
+  "/careers/page": "/careers",
+  "/portfolio/page": "/portfolio",
+  "/press/page": "/press",
+  "/register/page": "/register",
+  "/about/page": "/about",
+  "/under-construction/page": "/under-construction"
+}
