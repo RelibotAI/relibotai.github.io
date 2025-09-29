@@ -99,7 +99,7 @@ const Contact: React.FC = () => {
                       </div>
                       <div>
                         <p className="text-sm text-muted-foreground">Phone</p>
-                        <p className="text-foreground">+62 XXXXXXXXXX</p>
+                        <p className="text-foreground">+31 615560773</p>
                       </div>
                     </div>
                     
