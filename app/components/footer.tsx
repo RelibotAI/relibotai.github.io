@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
                 height={40}
                 className="w-10 h-10"
               />
-              <span className="text-2xl font-bold">RelibotAI</span>
+              <span className="text-2xl font-bold">RelibotAI - PT. Aska Udan Rezeki</span>
             </Link>
             <br/>
             <p className="text-muted-foreground mb-6 max-w-md">
@@ -60,7 +60,7 @@ const Footer: React.FC = () => {
         <div className="border-t border-border mt-12 pt-8">
           <div className="text-center">
             <p className="text-muted-foreground text-sm">
-              Copyright © 2025 RelibotAI. All rights reserved.
+              Copyright © 2025 RelibotAI - PT. Aska Udan Rezeki. All rights reserved.
             </p>
           </div>
         </div>

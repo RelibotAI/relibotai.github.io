@@ -54,6 +54,10 @@ a {
   text-decoration: none;
 }
 
+section[id] {
+  scroll-margin-top: 64px;
+}
+
 * {
   box-sizing: border-box;
 }
