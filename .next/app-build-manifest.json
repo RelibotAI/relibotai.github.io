@@ -29,13 +29,6 @@
       "static/chunks/main-app-4576e5a54f54d3df.js",
       "static/chunks/app/blog/page-5dc05098859c7055.js"
     ],
-    "/careers/page": [
-      "static/chunks/webpack-27bd34889ffa41de.js",
-      "static/chunks/4bd1b696-c023c6e3521b1417.js",
-      "static/chunks/255-77a2a609117b40ff.js",
-      "static/chunks/main-app-4576e5a54f54d3df.js",
-      "static/chunks/app/careers/page-5dc05098859c7055.js"
-    ],
     "/page": [
       "static/chunks/webpack-27bd34889ffa41de.js",
       "static/chunks/4bd1b696-c023c6e3521b1417.js",
@@ -43,6 +36,13 @@
       "static/chunks/main-app-4576e5a54f54d3df.js",
       "static/chunks/481-9fd398f1188ac1d2.js",
       "static/chunks/app/page-b46265ab5bd776a6.js"
+    ],
+    "/careers/page": [
+      "static/chunks/webpack-27bd34889ffa41de.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-77a2a609117b40ff.js",
+      "static/chunks/main-app-4576e5a54f54d3df.js",
+      "static/chunks/app/careers/page-5dc05098859c7055.js"
     ],
     "/portfolio/page": [
       "static/chunks/webpack-27bd34889ffa41de.js",
