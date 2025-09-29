@@ -1,8 +1,8 @@
 {
-  "/api/send-email/route": "/api/send-email",
   "/_not-found/page": "/_not-found",
-  "/careers/page": "/careers",
+  "/api/send-email/route": "/api/send-email",
   "/blog/page": "/blog",
+  "/careers/page": "/careers",
   "/page": "/",
   "/portfolio/page": "/portfolio",
   "/press/page": "/press",
