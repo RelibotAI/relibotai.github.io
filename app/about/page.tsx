@@ -11,7 +11,7 @@ export default function About() {
   return (
     <>
       <Header />
-      <main className="min-h-screen bg-secondary py-20">
+      <main className="min-h-screen bg-secondary py-20 pt-32">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h1 className="text-4xl font-bold text-foreground mb-4">

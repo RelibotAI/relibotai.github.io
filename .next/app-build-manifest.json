@@ -7,20 +7,27 @@
       "static/chunks/main-app-4576e5a54f54d3df.js",
       "static/chunks/app/_not-found/page-8edd1621fa604164.js"
     ],
-    "/layout": [
-      "static/chunks/webpack-27bd34889ffa41de.js",
-      "static/chunks/4bd1b696-c023c6e3521b1417.js",
-      "static/chunks/255-77a2a609117b40ff.js",
-      "static/chunks/main-app-4576e5a54f54d3df.js",
-      "static/css/a936423558a9d933.css",
-      "static/chunks/app/layout-3cf15edb0aae5733.js"
-    ],
     "/api/send-email/route": [
       "static/chunks/webpack-27bd34889ffa41de.js",
       "static/chunks/4bd1b696-c023c6e3521b1417.js",
       "static/chunks/255-77a2a609117b40ff.js",
       "static/chunks/main-app-4576e5a54f54d3df.js",
       "static/chunks/app/api/send-email/route-5dc05098859c7055.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-27bd34889ffa41de.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-77a2a609117b40ff.js",
+      "static/chunks/main-app-4576e5a54f54d3df.js",
+      "static/css/355206e2f83f46cd.css",
+      "static/chunks/app/layout-3cf15edb0aae5733.js"
+    ],
+    "/careers/page": [
+      "static/chunks/webpack-27bd34889ffa41de.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-77a2a609117b40ff.js",
+      "static/chunks/main-app-4576e5a54f54d3df.js",
+      "static/chunks/app/careers/page-5dc05098859c7055.js"
     ],
     "/blog/page": [
       "static/chunks/webpack-27bd34889ffa41de.js",
@@ -35,14 +42,7 @@
       "static/chunks/255-77a2a609117b40ff.js",
       "static/chunks/main-app-4576e5a54f54d3df.js",
       "static/chunks/481-9fd398f1188ac1d2.js",
-      "static/chunks/app/page-b3aa86f96fded417.js"
-    ],
-    "/careers/page": [
-      "static/chunks/webpack-27bd34889ffa41de.js",
-      "static/chunks/4bd1b696-c023c6e3521b1417.js",
-      "static/chunks/255-77a2a609117b40ff.js",
-      "static/chunks/main-app-4576e5a54f54d3df.js",
-      "static/chunks/app/careers/page-5dc05098859c7055.js"
+      "static/chunks/app/page-b1907345afe20f95.js"
     ],
     "/portfolio/page": [
       "static/chunks/webpack-27bd34889ffa41de.js",

@@ -11,7 +11,7 @@ export default function UnderConstruction() {
   return (
     <>
       <Header />
-      <main className="min-h-screen bg-background flex items-center justify-center py-20">
+      <main className="min-h-screen bg-background flex items-center justify-center py-20 pt-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           {/* Under Construction Image */}
           <div className="mb-8">
