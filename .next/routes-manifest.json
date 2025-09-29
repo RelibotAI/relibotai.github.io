@@ -2,16 +2,8 @@
   "version": 3,
   "pages404": true,
   "caseSensitive": false,
-  "basePath": "/relibotai",
+  "basePath": "",
   "redirects": [
-    {
-      "source": "/relibotai/",
-      "destination": "/relibotai",
-      "basePath": false,
-      "internal": true,
-      "statusCode": 308,
-      "regex": "^/relibotai/$"
-    },
     {
       "source": "/:path+/",
       "destination": "/:path+",
@@ -22,13 +14,7 @@
   ],
   "headers": [],
   "rewrites": {
-    "beforeFiles": [
-      {
-        "source": "/relibotai//_next/:path+",
-        "destination": "/relibotai/_next/:path+",
-        "regex": "^/relibotai//_next(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))(?:/)?$"
-      }
-    ],
+    "beforeFiles": [],
     "afterFiles": [],
     "fallback": []
   },

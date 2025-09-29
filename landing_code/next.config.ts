@@ -5,8 +5,6 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: '/relibotai',
-  assetPrefix: '/relibotai/',
 }
 
 export default nextConfig
