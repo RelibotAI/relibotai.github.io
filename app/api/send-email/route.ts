@@ -8,8 +8,8 @@ export async function POST(request: NextRequest) {
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: 'relibotai25@gmail.com',
-        pass: 'nulnfcytlenasafe',
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS,
       },
       tls: {
         rejectUnauthorized: false
@@ -19,8 +19,8 @@ export async function POST(request: NextRequest) {
     await transporter.verify();
 
     const mailOptions = {
-      from: 'relibotai25@gmail.com',
-      to: 'office@relibotai.com',
+      from: process.env.EMAIL_USER,
+      to: process.env.EMAIL_TO,
       subject: `Contact Form: ${subject}`,
       html: `
         <h2>New Contact Form Submission</h2>
@@ -36,18 +36,18 @@ export async function POST(request: NextRequest) {
     await transporter.sendMail(mailOptions);
     
     return NextResponse.json({ success: true });
-} catch (error) {
-  console.error('Detailed error:', error);
-  let errorMessage = 'Unknown error';
-  
-  if (error instanceof Error) {
-    errorMessage = error.message;
-  } else if (typeof error === 'string') {
-    errorMessage = error;
+  } catch (error) {
+    console.error('Detailed error:', error);
+    let errorMessage = 'Unknown error';
+    
+    if (error instanceof Error) {
+      errorMessage = error.message;
+    } else if (typeof error === 'string') {
+      errorMessage = error;
+    }
+    
+    return NextResponse.json({ 
+      error: `Failed to send email: ${errorMessage}` 
+    }, { status: 500 });
   }
-  
-  return NextResponse.json({ 
-    error: `Failed to send email: ${errorMessage}` 
-  }, { status: 500 });
-}
 }
