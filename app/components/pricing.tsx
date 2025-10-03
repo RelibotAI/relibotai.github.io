@@ -20,9 +20,9 @@ interface PricingPlan {
 const pricingPlans: PricingPlan[] = [
   {
     name: "Basic",
-    price: "Rp 500.000 (€ 30)",
+    price: "Rp 500.000 (€30)",
     period: "month",
-    setupCost: "Rp 25.000.000 (€ 1500)",
+    setupCost: "Rp 25.000.000 (€1500)",
     description: "Solution for small businesses",
     features: [
       { text: "Damage input via WhatsApp", included: true },
@@ -41,9 +41,9 @@ const pricingPlans: PricingPlan[] = [
   },
   {
     name: "Standart",
-    price: "Rp 750.000 (€ 40)",
+    price: "Rp 750.000 (€40)",
     period: "month",
-    setupCost: "Rp 35.000.000 (€ 2000)",
+    setupCost: "Rp 35.000.000 (€2000)",
     description: "Solution for growing businesses",
     features: [
       { text: "Damage input via WhatsApp", included: true },
@@ -62,9 +62,9 @@ const pricingPlans: PricingPlan[] = [
   },
   {
     name: "Full Package",
-    price: "Rp 2.000.000 (€ 105)",
+    price: "Rp 2.000.000 (€105)",
     period: "month",
-    setupCost: "Rp 54.000.000 (€ 3000)",
+    setupCost: "Rp 54.000.000 (€3000)",
     description: "Solution for large organizations",
     features: [
       { text: "Damage input via WhatsApp", included: true },
@@ -84,9 +84,9 @@ const pricingPlans: PricingPlan[] = [
   },
   {
     name: "Enterprise",
-    price: "Rp 9.000.000 (€ 470)",
+    price: "Rp 9.000.000 (€470)",
     period: "month",
-    setupCost: "> Rp 75.000.000 (€ 4000)",
+    setupCost: "> Rp 75.000.000 (€4000)",
     description: "Solution for multi-national corporations",
     features: [
       { text: "Damage input via WhatsApp", included: true },
