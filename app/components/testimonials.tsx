@@ -42,7 +42,7 @@ const Testimonials: React.FC = () => {
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent"> Customers Say</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Don't just take our word for it. Here's what business leaders say about BankMod.
+            Don't just take our word for it. Here's what business leaders say about RelibotAI.
           </p>
         </div>
 

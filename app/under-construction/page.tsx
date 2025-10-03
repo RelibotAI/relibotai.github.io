@@ -11,14 +11,14 @@ export default function UnderConstruction() {
   return (
     <>
       <Header />
-      <main className="min-h-screen bg-background flex items-center justify-center py-20 pt-32">
+      <main className="min-h-screen bg-muted flex items-center justify-center py-20 pt-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           {/* Under Construction Image */}
           <div className="mb-8">
             <img 
               src="/under-construction.png" 
               alt="Under Construction" 
-              className="mx-auto max-w-full h-auto"
+              className="mx-auto max-w-full h-auto rounded-3xl"
               style={{ maxHeight: '700px' }}
             />
           </div>

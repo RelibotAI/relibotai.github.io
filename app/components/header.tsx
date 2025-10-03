@@ -7,26 +7,36 @@ import Image from 'next/image';
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [activeSection, setActiveSection] = useState<string>('');
 
-  // Handle scroll effect
+  // Handle scroll effect and active section detection
   useEffect(() => {
-    // Check initial scroll position
     const checkInitialScroll = () => {
       const scrollTop = window.scrollY;
       const isHomePage = window.location.pathname === '/';
-      // Only use scroll-based state on home page
       setIsScrolled(isHomePage ? scrollTop > 50 : true);
     };
 
-    // Set initial state
     checkInitialScroll();
 
-    // Handle scroll changes
     const handleScroll = () => {
       const scrollTop = window.scrollY;
       const isHomePage = window.location.pathname === '/';
-      // Only use scroll-based state on home page
       setIsScrolled(isHomePage ? scrollTop > 50 : true);
+
+      // Detect active section
+      if (isHomePage) {
+        const sections = ['features', 'pricing', 'testimonials', 'contact'];
+        const current = sections.find(section => {
+          const element = document.getElementById(section);
+          if (element) {
+            const rect = element.getBoundingClientRect();
+            return rect.top <= 100 && rect.bottom >= 100;
+          }
+          return false;
+        });
+        setActiveSection(current || '');
+      }
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -82,9 +92,11 @@ const Header: React.FC = () => {
               <button 
                 onClick={() => scrollToSection('features')}
                 className={`transition-colors duration-300 ${
-                  isScrolled 
-                    ? 'text-black hover:text-primary' 
-                    : 'text-white hover:text-primary'
+                  activeSection === 'features'
+                    ? 'text-primary font-semibold'
+                    : isScrolled 
+                      ? 'text-black hover:text-primary' 
+                      : 'text-white hover:text-primary'
                 }`}
               >
                 Features
@@ -92,9 +104,11 @@ const Header: React.FC = () => {
               <button 
                 onClick={() => scrollToSection('pricing')}
                 className={`transition-colors duration-300 ${
-                  isScrolled 
-                    ? 'text-black hover:text-primary' 
-                    : 'text-white hover:text-primary'
+                  activeSection === 'pricing'
+                    ? 'text-primary font-semibold'
+                    : isScrolled 
+                      ? 'text-black hover:text-primary' 
+                      : 'text-white hover:text-primary'
                 }`}
               >
                 Pricing
@@ -102,9 +116,11 @@ const Header: React.FC = () => {
               <button 
                 onClick={() => scrollToSection('testimonials')}
                 className={`transition-colors duration-300 ${
-                  isScrolled 
-                    ? 'text-black hover:text-primary' 
-                    : 'text-white hover:text-primary'
+                  activeSection === 'testimonials'
+                    ? 'text-primary font-semibold'
+                    : isScrolled 
+                      ? 'text-black hover:text-primary' 
+                      : 'text-white hover:text-primary'
                 }`}
               >
                 Testimonials
@@ -112,9 +128,11 @@ const Header: React.FC = () => {
               <button 
                 onClick={() => scrollToSection('contact')}
                 className={`transition-colors duration-300 ${
-                  isScrolled 
-                    ? 'text-black hover:text-primary' 
-                    : 'text-white hover:text-primary'
+                  activeSection === 'contact'
+                    ? 'text-primary font-semibold'
+                    : isScrolled 
+                      ? 'text-black hover:text-primary' 
+                      : 'text-white hover:text-primary'
                 }`}
               >
                 Contact
@@ -123,11 +141,18 @@ const Header: React.FC = () => {
           </div>
 
           <div className="hidden md:block">
-            <a href="/register">
+            <div className="flex items-center space-x-4">
+              <a href="/register">
                 <button className="bg-primary text-primary-foreground px-6 py-2 rounded-lg hover:bg-primary/90 transition-all duration-200 shadow-lg hover:shadow-primary/25">
-                Register
+                  Register
                 </button>
-            </a>
+              </a>
+              <a href="/log-in">
+                <button className="border border-primary text-primary px-6 py-2 rounded-lg hover:bg-primary hover:text-primary-foreground transition-all duration-200 backdrop-blur-sm">
+                  Log In
+                </button>
+              </a>
+            </div>
           </div>
 
           <div className="md:hidden">
@@ -156,9 +181,11 @@ const Header: React.FC = () => {
               <button 
                 onClick={() => scrollToSection('features')}
                 className={`block w-full text-left px-3 py-2 rounded-md transition-colors duration-300 ${
-                  isScrolled 
-                    ? 'text-black hover:text-primary hover:bg-gray-100' 
-                    : 'text-white hover:text-primary hover:bg-white/10'
+                  activeSection === 'features'
+                    ? 'text-primary font-semibold bg-primary/10'
+                    : isScrolled 
+                      ? 'text-black hover:text-primary hover:bg-gray-100' 
+                      : 'text-white hover:text-primary hover:bg-white/10'
                 }`}
               >
                 Features
@@ -166,9 +193,11 @@ const Header: React.FC = () => {
               <button 
                 onClick={() => scrollToSection('pricing')}
                 className={`block w-full text-left px-3 py-2 rounded-md transition-colors duration-300 ${
-                  isScrolled 
-                    ? 'text-black hover:text-primary hover:bg-gray-100' 
-                    : 'text-white hover:text-primary hover:bg-white/10'
+                  activeSection === 'pricing'
+                    ? 'text-primary font-semibold bg-primary/10'
+                    : isScrolled 
+                      ? 'text-black hover:text-primary hover:bg-gray-100' 
+                      : 'text-white hover:text-primary hover:bg-white/10'
                 }`}
               >
                 Pricing
@@ -176,9 +205,11 @@ const Header: React.FC = () => {
               <button 
                 onClick={() => scrollToSection('testimonials')}
                 className={`block w-full text-left px-3 py-2 rounded-md transition-colors duration-300 ${
-                  isScrolled 
-                    ? 'text-black hover:text-primary hover:bg-gray-100' 
-                    : 'text-white hover:text-primary hover:bg-white/10'
+                  activeSection === 'testimonials'
+                    ? 'text-primary font-semibold bg-primary/10'
+                    : isScrolled 
+                      ? 'text-black hover:text-primary hover:bg-gray-100' 
+                      : 'text-white hover:text-primary hover:bg-white/10'
                 }`}
               >
                 Testimonials
@@ -186,16 +217,23 @@ const Header: React.FC = () => {
               <button 
                 onClick={() => scrollToSection('contact')}
                 className={`block w-full text-left px-3 py-2 rounded-md transition-colors duration-300 ${
-                  isScrolled 
-                    ? 'text-black hover:text-primary hover:bg-gray-100' 
-                    : 'text-white hover:text-primary hover:bg-white/10'
+                  activeSection === 'contact'
+                    ? 'text-primary font-semibold bg-primary/10'
+                    : isScrolled 
+                      ? 'text-black hover:text-primary hover:bg-gray-100' 
+                      : 'text-white hover:text-primary hover:bg-white/10'
                 }`}
               >
                 Contact
               </button>
-              <a href="/register">
+              <a href="/register" className="block">
                 <button className="w-full text-left px-3 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-all mt-2 shadow-lg">
                   Register
+                </button>
+              </a>
+              <a href="/log-in" className="block">
+                <button className="w-full text-left px-3 py-2 border border-primary text-primary rounded-lg hover:bg-primary hover:text-primary-foreground transition-all backdrop-blur-sm">
+                  Log In
                 </button>
               </a>
             </div>

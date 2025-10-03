@@ -25,7 +25,7 @@ const Hero: React.FC = () => {
         />
         
         {/* Transparent Black Overlay */}
-        <div className="absolute inset-0 bg-black/75"></div>
+        <div className="absolute inset-0 bg-black/50"></div>
       </div>
 
       {/* Content */}
@@ -38,15 +38,15 @@ const Hero: React.FC = () => {
           <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto">
             Helping organizations digitize processes and empower decisions with data.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/register">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <a href="/register" className="inline-block">
                 <button className="bg-primary text-primary-foreground px-8 py-4 rounded-lg text-lg font-semibold hover:bg-primary/90 transition-all duration-200 shadow-lg hover:shadow-primary/25 transform hover:scale-105">
                 Get Started
                 </button>
             </a>
             <button 
               onClick={() => scrollToSection('features')}
-              className="border border-primary text-primary px-8 py-4 rounded-lg text-lg font-semibold hover:bg-primary hover:text-primary-foreground transition-all duration-200 backdrop-blur-sm"
+              className="border border-primary text-primary px-8 py-4 rounded-lg text-lg font-semibold hover:bg-primary hover:text-primary-foreground transition-all duration-200 backdrop-blur-sm inline-block"
             >
               Learn More
             </button>

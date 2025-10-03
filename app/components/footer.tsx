@@ -50,9 +50,9 @@ const Footer: React.FC = () => {
             <h3 className="text-lg font-semibold mb-4 text-foreground">Company</h3>
             <ul className="space-y-2">
               <li><Link href="/about" className="text-muted-foreground hover:text-primary transition-colors">About RelibotAI</Link></li>
-              <li><Link href="/careers" className="text-muted-foreground hover:text-primary transition-colors">Careers</Link></li>
+              <li><Link href="/our-story" className="text-muted-foreground hover:text-primary transition-colors">Our Story</Link></li>
               <li><Link href="/blog" className="text-muted-foreground hover:text-primary transition-colors">Blog</Link></li>
-              <li><Link href="/press" className="text-muted-foreground hover:text-primary transition-colors">Press</Link></li>
+              <li><Link href="/investor-relations" className="text-muted-foreground hover:text-primary transition-colors">Investor Relations</Link></li>
             </ul>
           </div>
         </div>

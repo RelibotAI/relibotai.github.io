@@ -1,12 +1,14 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
   "/api/send-email/route": "app/api/send-email/route.js",
-  "/blog/page": "app/blog/page.js",
+  "/investor-relations/page": "app/investor-relations/page.js",
   "/careers/page": "app/careers/page.js",
+  "/log-in/page": "app/log-in/page.js",
+  "/our-story/page": "app/our-story/page.js",
   "/page": "app/page.js",
-  "/portfolio/page": "app/portfolio/page.js",
-  "/press/page": "app/press/page.js",
   "/register/page": "app/register/page.js",
+  "/portfolio/page": "app/portfolio/page.js",
   "/about/page": "app/about/page.js",
+  "/blog/page": "app/blog/page.js",
   "/under-construction/page": "app/under-construction/page.js"
 }

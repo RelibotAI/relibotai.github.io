@@ -20,9 +20,9 @@ interface PricingPlan {
 const pricingPlans: PricingPlan[] = [
   {
     name: "Basic",
-    price: "Rp 500.000",
+    price: "Rp 500.000 (€ 30)",
     period: "month",
-    setupCost: "Rp 25.000.000",
+    setupCost: "Rp 25.000.000 (€ 1500)",
     description: "Solution for small businesses",
     features: [
       { text: "Damage input via WhatsApp", included: true },
@@ -41,9 +41,9 @@ const pricingPlans: PricingPlan[] = [
   },
   {
     name: "Standart",
-    price: "Rp 750.000",
+    price: "Rp 750.000 (€ 40)",
     period: "month",
-    setupCost: "Rp 35.000.000",
+    setupCost: "Rp 35.000.000 (€ 2000)",
     description: "Solution for growing businesses",
     features: [
       { text: "Damage input via WhatsApp", included: true },
@@ -58,14 +58,13 @@ const pricingPlans: PricingPlan[] = [
       { text: "Fast response support from Customer Service", included: false },
       { text: "Operator training", included: false },
       { text: "Optional integration with SAP / ERP", included: false }
-    ],
-    highlighted: true
+    ]
   },
   {
     name: "Full Package",
-    price: "Rp 2.000.000",
+    price: "Rp 2.000.000 (€ 105)",
     period: "month",
-    setupCost: "Rp 54.000.000",
+    setupCost: "Rp 54.000.000 (€ 3000)",
     description: "Solution for large organizations",
     features: [
       { text: "Damage input via WhatsApp", included: true },
@@ -80,13 +79,14 @@ const pricingPlans: PricingPlan[] = [
       { text: "Fast response support from Customer Service", included: false },
       { text: "Operator training", included: false },
       { text: "Optional integration with SAP / ERP", included: false }
-    ]
+    ],
+    highlighted: true
   },
   {
     name: "Enterprise",
-    price: "Rp 9.000.000",
+    price: "Rp 9.000.000 (€ 470)",
     period: "month",
-    setupCost: "Rp 75.000.000",
+    setupCost: "> Rp 75.000.000 (€ 4000)",
     description: "Solution for multi-national corporations",
     features: [
       { text: "Damage input via WhatsApp", included: true },
@@ -116,7 +116,7 @@ const Pricing: React.FC = () => {
       <div className="max-w-[1600px] mx-auto px-1 sm:px-2 lg:px-3">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Simple, Transparent
+            Simple and Transparent
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent"> Pricing</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -144,7 +144,7 @@ const Pricing: React.FC = () => {
               <p className="text-muted-foreground mb-5">{plan.description}</p>
               
               <div className="mb-5">
-                <span className="text-3xl font-bold text-card-foreground">{plan.price}</span>
+                <span className="text-2xl font-bold text-card-foreground">{plan.price}</span>
                 <span className="text-muted-foreground ml-1">/{plan.period}</span>
                 <p className="text-sm mt-1">+ one-time setup cost: {plan.setupCost}</p>
               </div>
