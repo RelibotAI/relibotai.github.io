@@ -51,16 +51,28 @@
       "namedRegex": "^/careers(?:/)?$"
     },
     {
+      "page": "/investor-relations",
+      "regex": "^/investor\\-relations(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/investor\\-relations(?:/)?$"
+    },
+    {
+      "page": "/log-in",
+      "regex": "^/log\\-in(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/log\\-in(?:/)?$"
+    },
+    {
+      "page": "/our-story",
+      "regex": "^/our\\-story(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/our\\-story(?:/)?$"
+    },
+    {
       "page": "/portfolio",
       "regex": "^/portfolio(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/portfolio(?:/)?$"
-    },
-    {
-      "page": "/press",
-      "regex": "^/press(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/press(?:/)?$"
     },
     {
       "page": "/register",
