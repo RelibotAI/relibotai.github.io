@@ -198,20 +198,27 @@ const Contact: React.FC = () => {
                       <label htmlFor="subject" className="block text-sm font-medium text-card-foreground mb-2">
                         Subject *
                       </label>
-                      <select
-                        id="subject"
-                        name="subject"
-                        required
-                        value={formData.subject}
-                        onChange={handleChange}
-                        className="w-full px-4 py-3 border border-border rounded-lg bg-background text-foreground focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
-                      >
-                        <option>General Inquiry</option>
-                        <option>Sales</option>
-                        <option>Support</option>
-                        <option>Partnership</option>
-                        <option>Other</option>
-                      </select>
+                      <div className="relative">
+                        <select
+                          id="subject"
+                          name="subject"
+                          required
+                          value={formData.subject}
+                          onChange={handleChange}
+                          className="w-full px-4 py-3 pr-10 border border-border rounded-lg bg-background text-foreground focus:ring-2 focus:ring-primary focus:border-primary transition-colors appearance-none"
+                        >
+                          <option>General Inquiry</option>
+                          <option>Sales</option>
+                          <option>Support</option>
+                          <option>Partnership</option>
+                          <option>Other</option>
+                        </select>
+                        <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-muted-foreground">
+                          <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                          </svg>
+                        </div>
+                      </div>
                     </div>
 
                     <div>
