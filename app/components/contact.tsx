@@ -97,8 +97,8 @@ const Contact: React.FC = () => {
                       </svg>
                     </div>
                     <div>
-                      <p className="text-sm text-muted-foreground mb-1">Phone</p>
-                      <p className="text-foreground font-medium">+31 615560773</p>
+                      <p className="text-sm text-muted-foreground mb-1">Phone / WhatsApp</p>
+                      <p className="text-foreground font-medium">+62 821 2267 6910</p>
                     </div>
                   </div>
                   
