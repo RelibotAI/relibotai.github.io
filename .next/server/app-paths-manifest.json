@@ -4,11 +4,11 @@
   "/blog/page": "app/blog/page.js",
   "/careers/page": "app/careers/page.js",
   "/investor-relations/page": "app/investor-relations/page.js",
-  "/our-story/page": "app/our-story/page.js",
   "/log-in/page": "app/log-in/page.js",
-  "/register/page": "app/register/page.js",
+  "/our-story/page": "app/our-story/page.js",
   "/page": "app/page.js",
   "/portfolio/page": "app/portfolio/page.js",
+  "/register/page": "app/register/page.js",
   "/about/page": "app/about/page.js",
   "/under-construction/page": "app/under-construction/page.js"
 }
